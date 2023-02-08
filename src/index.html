@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <title>SEC IXViewer | Workiva IXBRL Viewer</title>
+    <style>
+      .table {
+        width: 100%;
+      }
+      .thead {
+        text-align: center;
+        background-color: #003768;
+        color: #fff;
+      }
+      .td {
+        margin-top: auto;
+        width: 50%;
+      }
+
+      .td-1 {
+        padding: 10px;
+        border: 1px solid #003768;
+      }
+      .h2 {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 15px;
+      }
+      .sec {
+        border: 2px solid #003768;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .background {
+        background-size: 50vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        background-size: contain;
+        background-position: center;
+      }
+      figure {
+        border: solid 2px #003768;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <td class="td" colspan="2">
+            <h2 class="h2">SEC IXViewer</h2>
+          </td>
+          <td class="td" colspan="2">
+            <h2 class="h2">Workiva Inline Viewer</h2>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- TEST 1 -->
+        <tr>
+          <td class="td-1" colspan="4">
+            <h2>Test 1</h2>
+            <h3>
+              SEC URL |
+              <a
+                target="_blank"
+                href="https://www.sec.gov/Archives/edgar/data/19617/000001961722000272/0000019617-22-000272-index.htm"
+                >Filing Detail</a
+              >
+            </h3>
+            <h3>Description:</h3>
+            <p>Single file.</p>
+            <p>This filing is very large.</p>
+            <p>There are a total of 7,889 facts.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="td-1" valign="top" colspan="1">
+            <h3>SEC URL</h3>
+            <p>HTML is 16 MB | MetaLinks is 2.4MB</p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.sec.gov/ix?doc=/Archives/edgar/data/19617/000001961722000272/jpm-20211231.htm"
+                >External Filing</a
+              >
+            </p>
+          </td>
+
+          <td class="td-1" colspan="3">
+            <figure>
+              <a href="./perf/sec-lighthouse.PNG" target="_blank">
+                <div
+                  class="background"
+                  style="background-image: url('./perf/sec-lighthouse.PNG')"
+                ></div>
+              </a>
+              <figcaption>This is something.</figcaption>
+            </figure>
+
+            <figure>
+              <a href="./perf/sec-memory.PNG" target="_blank">
+                <div
+                  class="background"
+                  style="background-image: url('./perf/sec-memory.PNG')"
+                ></div>
+              </a>
+              <figcaption>This is something.</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td class="td-1" valign="top" colspan="1">
+            <h3>Workiva URL</h3>
+            <p>Injected HTML is 32.9 MB</p>
+            <p>
+              <a target="_blank" href="./test-1/workiva/jpm-20211231.html"
+                >Local Filing</a
+              >
+            </p>
+          </td>
+          <td class="td-1" colspan="3">
+            <figure>
+              <div
+                class="background"
+                style="background-image: url('./perf/workiva-lighthouse.PNG')"
+              ></div>
+              <figcaption>This is something.</figcaption>
+            </figure>
+            <figure>
+              <div
+                class="background"
+                style="background-image: url('./perf/workiva-memory.PNG')"
+              ></div>
+              <figcaption>This is something.</figcaption>
+            </figure>
+            <!-- <img src="./perf/workiva-lighthouse.PNG" />
+            <img src="./perf/workiva-memory.PNG" /> -->
+          </td>
+        </tr>
+        <!-- END TEST 1 -->
+        <!-- TEST 2 -->
+        <tr>
+          <td class="td-1" valign="top" colspan="4">
+            <h2>Test 2</h2>
+            <h3>
+              SEC URL |
+              <a
+                target="_blank"
+                href="https://www.sec.gov/Archives/edgar/data/320193/000032019322000108/0000320193-22-000108-index.html"
+                >Filing Detail</a
+              >
+            </h3>
+            <h3>Description:</h3>
+            <p>Single file.</p>
+            <p>This filing is fairly average.</p>
+            <p>There are a total of 1,168 facts.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td-1" valign="top" colspan="1">
+            <h3>SEC URL</h3>
+            <p>HTML is 16 MB | MetaLinks is 2.4MB</p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.sec.gov/ix?doc=/Archives/edgar/data/19617/000001961722000272/jpm-20211231.htm"
+                >External Filing</a
+              >
+            </p>
+          </td>
+
+          <td class="td-1" colspan="3">
+            <figure>
+              <a href="./perf/sec-lighthouse.PNG" target="_blank">
+                <div
+                  class="background"
+                  style="background-image: url('./perf/sec-lighthouse.PNG')"
+                ></div>
+              </a>
+              <figcaption>This is something.</figcaption>
+            </figure>
+
+            <figure>
+              <a href="./perf/sec-memory.PNG" target="_blank">
+                <div
+                  class="background"
+                  style="background-image: url('./perf/sec-memory.PNG')"
+                ></div>
+              </a>
+              <figcaption>This is something.</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <!-- END TEST 2 -->
+        <!-- TEST 3 -->
+        <tr>
+          <td class="td-1" colspan="2">
+            <h2>Test 3</h2>
+            <h3>
+              SEC URL |
+              <a
+                target="_blank"
+                href="https://www.sec.gov/Archives/edgar/data/21076/000002107622000026/0000021076-22-000026-index.html"
+                >Filing Detail</a
+              >
+            </h3>
+            <h3>Description:</h3>
+            <p><strong>Multi</strong> file.</p>
+            <p>This filing is fairly average in size.</p>
+            <p>There are a total of 1,812 facts.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="td-1">
+            <h3>SEC URL</h3>
+            <p>HTML is 15.0 kB + 2.4 MB | MetaLinks is 1.2 MB</p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.sec.gov/ix?doc=/Archives/edgar/data/21076/000002107622000026/clx-20220630.htm"
+                >External Filing</a
+              >
+            </p>
+          </td>
+          <td class="td-1">
+            <h3>Workiva URL</h3>
+            <p>Injected HTML is 4.2 MB</p>
+            <p>
+              <a target="_blank" href="./test-3/workiva/clx-20220630.html"
+                >Local Filing</a
+              >
+            </p>
+          </td>
+        </tr>
+        <!-- END TEST 3 -->
+      </tbody>
+    </table>
+  </body>
+</html>
